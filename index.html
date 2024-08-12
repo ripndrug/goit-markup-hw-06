@@ -50,16 +50,16 @@
           </ul>
         </address>
 
-        <button class="burger-btn" data-menu-open>
+        <button class="burger-btn">
           <svg class="burger-icon" height="24" width="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-btn" data-menu-close>
+          <button class="mobile-menu-btn">
             <svg class="mobile-menu-btn-icon" height="8" width="8">
               <use href="./images/icons.svg#icon-form-close"></use>
             </svg>
@@ -103,21 +103,21 @@
             </li>
             <li class="mobile-social-item">
               <a href="" class="mobile-social-link">
-                <svg class="" height="24" width="24">
+                <svg class="mobile-social-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="mobile-social-item">
               <a href="" class="mobile-social-link">
-                <svg class="" height="24" width="24">
+                <svg class="mobile-social-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="mobile-social-item">
               <a href="" class="mobile-social-link">
-                <svg class="" height="24" width="24">
+                <svg class="mobile-social-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -128,16 +128,16 @@
     </header>
 
     <main>
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <button type="button" class="hero-button" data-menu-open>
             Order Service
           </button>
         </div>
       </section>
 
-      <section class="goals-section section-container hidden">
+      <section class="goals-section section-container">
         <div class="container">
           <h2 class="visually-hidden">Goals</h2>
           <ul class="goals-list">
@@ -193,13 +193,14 @@
         </div>
       </section>
 
-      <section class="team-section section-container hidden">
+      <section class="team-section section-container">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -242,6 +243,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -284,6 +286,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -326,6 +329,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -369,7 +373,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section section-container hidden">
+      <section class="portfolio-section section-container">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -498,7 +502,7 @@
       </section>
     </main>
 
-    <footer class="footer-section hidden">
+    <footer class="footer-section">
       <div class="container footer-flex">
         <div class="footer-logo-container">
           <a href="/" class="logo">Web<span class="logo-web">Studio</span></a>
@@ -565,9 +569,9 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open hidden data-modal">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <button type="button" class="btn-close" data-modal-close>
+        <button type="button" class="btn-close" data-menu-close>
           <svg class="btn-close-icon" height="8" width="8">
             <use href="./images/icons.svg#icon-form-close"></use>
           </svg>
@@ -644,8 +648,5 @@
         </form>
       </div>
     </div>
-
-    <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
