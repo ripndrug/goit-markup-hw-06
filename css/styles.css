@@ -1018,8 +1018,8 @@ button {
     display: block;
   }
 
-  .footer-section {
-    padding: 96px 164px 96px 108px;
+  .footer-section > .container {
+    width: 584px;
   }
 
   .footer-text {
@@ -1061,6 +1061,10 @@ button {
 
   .footer-flex {
     flex-wrap: nowrap;
+  }
+
+  .footer-section > .container {
+    width: auto;
   }
 
   .footer-logo-container {
